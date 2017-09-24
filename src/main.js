@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import iView from 'iview'
+import 'iview/dist/styles/iview.css'
 import echarts from 'echarts'
 
 import './components'

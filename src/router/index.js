@@ -6,11 +6,20 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/index',
+      path: '/',
       name: 'index',
       component (resolve) {
         require(['../views/tabContent.vue'], resolve)
-      }
+      },
+      children: [
+        {
+          path: 'pageOne',
+          name: 'pageOne',
+          component (resolve) {
+            require(['../views/pageOne.vue'], resolve)
+          }
+        }
+      ]
     }
   ]
 })
