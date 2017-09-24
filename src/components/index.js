@@ -1,3 +1,3 @@
-import Vue from 'Vue'
+import Vue from 'vue'
 
-Vue.component('Chart', require('./chart.vue'))
+Vue.component('chart-item', require('./Chart'))
