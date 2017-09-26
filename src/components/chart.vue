@@ -29,5 +29,10 @@ export default {
   .chart {
     height: 300px;
     width: 30%;
+    float: left;
+    margin-left: 5%;
+  }
+  .chart:first-child {
+    margin-left: 0;
   }
 </style>
